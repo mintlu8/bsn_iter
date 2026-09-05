@@ -1,0 +1,22 @@
+[package]
+name = "bsn_iter"
+version = "0.0.1"
+edition = "2024"
+
+readme = "README.md"
+repository = "https://github.com/mintlu8/bsn_iter"
+description = """
+macro_rules! style iteration for BSN(Bevy Scene Notation).
+"""
+keywords = ["bevy", "bsn"]
+
+[lib]
+proc-macro = true
+doctest = false
+
+[dependencies]
+proc-macro2 = "1.0.107"
+quote = "1.0.47"
+
+[dev-dependencies]
+bevy = { version = "0.19.1", default-features = false, features = ["scene", "default_app"]}
