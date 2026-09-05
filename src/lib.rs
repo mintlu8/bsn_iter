@@ -1,3 +1,4 @@
+#![doc = include_str!("../README.md")]
 #![allow(clippy::collapsible_if)]
 use proc_macro::TokenStream as TokenStream1;
 use proc_macro2::{Delimiter, Group, Ident, Span, TokenStream, TokenTree};

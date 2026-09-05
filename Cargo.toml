@@ -1,6 +1,6 @@
 [package]
 name = "bsn_iter"
-version = "0.0.1"
+version = "0.1.0"
 edition = "2024"
 
 authors = ["Mincong Lu <mintlux667@gmail.com>"]
@@ -22,4 +22,4 @@ proc-macro2 = "1.0.107"
 quote = "1.0.47"
 
 [dev-dependencies]
-bevy = { version = "0.19.1", default-features = false, features = ["scene", "default_app"]}
+bevy = { version = "0.19.1", default-features = false, features = ["scene", "default_app", "2d"]}

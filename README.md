@@ -13,8 +13,8 @@ let x_offsets = vec![0.0f32, 1., 2., 3.];
 let image_list = vec!["a.png", "b.png", "c.png", "d.png"];
 
 bsni!(
-    MyComponent,
-    MyComponent2,
+    MyComponent
+    MyComponent2
     Children [
         $(
             Transform {
