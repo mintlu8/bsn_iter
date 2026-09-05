@@ -41,10 +41,9 @@ fn parse_iter(token_stream: Vec<TokenTree>, prev: &mut Vec<Ident>, span: Span) -
     } else {
         quote! {}
     };
-    quote! {{{
+    quote! {{#[allow(unused)]{
         let mut __result = Vec::new();
         #(let mut #idents = #idents.into_iter();)*
-        #[allow(unused)]
         loop {
             #err
             #(let Some(#idents) = #idents.next() else {break};)*
